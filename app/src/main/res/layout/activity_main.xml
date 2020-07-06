@@ -7,12 +7,161 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="282dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/game_bg_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Switch
+        android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch4" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch3" />
+
+    <ImageView
+        android:id="@+id/cir1"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/white"
+        app:layout_constraintLeft_toRightOf="@id/switch1"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/cir2"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/white"
+        app:layout_constraintLeft_toRightOf="@id/switch1"
+        app:layout_constraintTop_toBottomOf="@id/cir1" />
+
+    <ImageView
+        android:id="@+id/cir3"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/white"
+        app:layout_constraintLeft_toRightOf="@id/switch1"
+        app:layout_constraintTop_toBottomOf="@id/cir2" />
+
+    <ImageView
+        android:id="@+id/cir4"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/white"
+        app:layout_constraintLeft_toRightOf="@id/switch1"
+        app:layout_constraintTop_toBottomOf="@id/cir3" />
+
+    <ImageView
+        android:id="@+id/cir5"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/white"
+        app:layout_constraintLeft_toRightOf="@id/switch1"
+        app:layout_constraintTop_toBottomOf="@id/cir4" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/submit_text"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ByteDance_img"
+        android:src="@mipmap/test_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="155dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"
+            android:text="@string/normal_mode" />
+
+        <RadioButton
+            android:id="@+id/radio_debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/debug_mode" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

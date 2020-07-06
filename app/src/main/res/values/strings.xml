@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HW1</string>
+    <string name="submit_text">提交</string>
+    <string name="win_text">恭喜您答对了</string>
+    <string name="lose_text">您猜错了，游戏将重新开始</string>
+    <string name="game_bg_text">下方有5枚棋子，有黑白两色，你需要去猜测这五个棋子的颜色。每次点击下方的提交按钮可以得到猜对了几个的回复。游戏通关的条件是在5次以内猜出所有棋子颜色。</string>
+    <string name="ByteDance_img">一张字节跳动图片</string>
+    <string name="normal_mode">正常模式</string>
+    <string name="debug_mode">测试模式(无限次数)</string>
 </resources>
